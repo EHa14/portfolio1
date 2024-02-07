@@ -1,0 +1,430 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+body {
+    font-family: "caveat","noto sans jp thin" ,san-serif;
+    line-height: 1.7;
+    color: #4C443C;
+}
+a {
+    color: #4C443C;
+}
+
+/*--- ヘッダー ---*/
+.page-header {
+    max-width: auto;
+    height: 70px;
+    font-size: 14px;
+    background-color: #FAF6F0;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 200px 10px;
+}
+
+.sub-nav  {
+    display: flex;
+}
+.sub-nav a {
+    margin-left: 30px;
+}
+
+/*--- ヘッダー ---*/
+
+
+/*---  メインエリア部分 ---*/
+.main-content {
+    display: flex;
+    margin-top: 140px;
+}
+.main-content p {
+    margin-top: 60px;
+    margin-left: -300px;
+    font-size: 72px;
+    line-height: 1.2;
+}
+.main-content img {
+    width: 645px;
+    height: 450px;
+    margin-left: 500px;
+}
+/*---  メインエリア部分 ---*/
+
+/*---　About ---*/
+.about {
+    position: relative;
+    margin-top:70px ;
+    margin-left:25% ;
+}
+
+.about h4 {
+    position: absolute;
+    top: 7%;
+    left: 2%;
+    font-size: 53px;
+    font-weight: normal;
+}
+.about p {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "noto sans jp thin";
+}
+
+.about-content {
+    display: flex;
+    justify-content:center;
+    font-size:16px;
+    font-family: "noto sans jp thin";
+    grid-gap: 60px;
+}
+.about-img {
+    width: 260px;
+    height: 194px;
+
+}
+.mb-img {
+    display: none;
+}
+.btn-wrapper {
+    margin-top: 40px;
+
+}
+.button {
+    display: block;
+    border-radius: 20px ;
+    background:#F4EAE0 ;
+    height:40px ;
+    width:142px ;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    font-family: "caveat";
+    text-decoration: none;
+    padding: 16px 30px;
+}
+.button:hover {
+    background: #F4DFC8;
+}
+/*---ここまでabout  ---*/
+
+
+/*--- works ---*/
+.works {
+    position: relative;
+    margin-top:70px ;
+    margin-left:25% ;
+    list-style: none;
+}
+.works h4 {
+    position: absolute;
+    top: 7%;
+    left: 2%;
+    font-size: 53px;
+    font-weight: normal;
+}
+.works p {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "noto sans jp thin";
+}
+
+.works-content {
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    place-items: center;
+}
+
+.works-content p {
+    font-family: "Noto Sans JP thin";
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 70px;
+}
+/*--- hoverできない？ ---*/
+.works-box1 img,
+.works-box2 img,
+.works-box3 img,
+.works-box4 img {
+    border: solid 3px #F4EAE0 ;
+    border-radius: 1%;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+    width: 520px;
+    height: 300px;
+}
+
+
+/*--- works ---*/
+
+/*--- ここからstrength ---*/
+.strength {
+    position: relative;
+    margin-top:70px ;
+    margin-left:25% ;
+}
+.strength h4 {
+    position: absolute;
+    top: 7%;
+    left: 1%;
+    font-size: 53px;
+    font-weight: normal;
+}
+.strength p {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "noto sans jp thin";
+}
+
+.strength-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.strength-content h5 {
+    font-family: "noto sans jp thin";
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    padding: 20px;
+}
+
+.strength-content p {
+    font-family: "noto sans jp thin";
+    font-size: 14px;
+    font-weight: none;
+    width:200px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*--- strength ---*/
+
+/*--- ここからcontact ---*/
+.contact {
+    position: relative;
+    margin-top:70px ;
+    margin-left:25% ;
+}
+.contact h4 {
+    position: absolute;
+    top: 7%;
+    left: 1%;
+    font-size: 53px;
+    font-weight: normal;
+}
+.contact p {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "noto sans jp thin";
+}
+h6 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "noto sans jp thin";
+    margin-bottom: 40px;
+}
+.form {
+    text-decoration: none;
+    width: fit-content;
+    margin: auto;
+}
+label {
+    font-size: 14px;
+    font-family: "noto sans jp thin";
+    font-weight: none;
+    display: block;
+}
+input[type="name"],
+input[type="email"],
+textarea {
+    background: #F4EAE0;
+    border-bottom: 1px #4C443C solid;
+    border-radius: 1%;
+    padding: 8px;
+    font-size: 1rem;
+}
+input[type="name"],
+input[type="email"] {
+    width: 100%;
+    max-width: 420px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 420px;
+    height: 100px;
+}
+
+input[type="submit"] {
+    border: none;
+    margin-bottom: 70px;
+}
+
+.button {
+    display: block;
+    border-radius: 20px ;
+    background:#F4EAE0 ;
+    height:40px ;
+    width:142px ;
+    padding: 16px 30px;
+    font-size: 14px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    font-family: "caveat";
+    text-align: center;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+.button:hover {
+    background: #F4DFC8;
+}
+
+.footer {
+    max-width: auto;
+    height: 70px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.2;
+    background-color: #FAF6F0;
+    padding: 20px;
+    list-style: none;
+}
+
+
+/*--- ここからキャリアpage ---*/
+.career {
+    position: relative;
+    margin-top:70px ;
+    margin-left:30% ;
+}
+.career h4 {
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    font-size: 53px;
+    font-weight: normal;
+}
+.career p {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "noto sans jp thin";
+}
+.career-content {
+    margin-bottom: 70px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    font-family: "noto sans jp thin";
+    font-size: 14px;
+    text-decoration: none;
+    gap: 30px;
+}
+li {
+    padding-top:10px ;
+    list-style: none;
+}
+
+/*---ここからモバイル版 ---*/
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+    }
+    .main-content {
+        float: none;
+        margin-top: 70px;
+    }
+    .main-content p {
+        margin-top: 70px;
+        margin-left: -250px;
+        font-size: 32px;
+        line-height: 1.2;
+    }
+    .main-content img {
+        margin-left: 0 ;
+        width: 460px;
+        height: auto;
+    }
+
+    .about,
+    .works,
+    .strength,
+    .contact,
+    .career {
+        float: none;
+        margin-left: 10px;
+    }
+    .about p,
+    .works p,
+    .strength p,
+    .contact p,
+    .career p {
+        margin-left: 120px;
+    }
+
+    .about-content {
+        font-size: 13px;
+        gap: 10px;
+    }
+    .about-img {
+        display: none;
+    }
+    .mb-img {
+        display: flex;
+
+        width: 120px;
+        height: 180px;
+    }
+
+    .works-content {
+        grid-template-columns:1fr ;
+        gap: 40px;
+        margin-top: 40px;
+    }
+    .works-content img {
+        width: 380px;
+        height: 240px;
+    }
+
+    .strength-content {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .line-img {
+        display: none;
+    }
+    .career-content {
+        font-size: 12px;
+    }
+
+}
