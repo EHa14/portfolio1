@@ -141,8 +141,9 @@ a {
 
 .works-content {
     display: grid;
-    grid-template-columns:1fr 1fr ;
-    place-items: center;
+    grid-template-columns:repeat(2,520px) ;
+    justify-content: center;
+    column-gap: 50px;
 }
 
 .works-content p {
@@ -161,6 +162,22 @@ a {
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
     width: 520px;
     height: 300px;
+}
+.works-box1 a:hover {
+    opacity: 0.5;
+    transition:0.3s;
+}
+.works-box2 a:hover {
+    opacity: 0.5;
+    transition:0.3s;
+}
+.works-box3 a:hover {
+    opacity: 0.5;
+    transition:0.3s;
+}
+.works-box4 a:hover {
+    opacity: 0.5;
+    transition:0.3s;
 }
 
 
