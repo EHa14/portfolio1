@@ -14,17 +14,18 @@ a {
 
 /*--- ヘッダー ---*/
 .page-header {
+    margin-top: 0;
     max-width: auto;
     height: 70px;
     font-size: 14px;
     background-color: #FAF6F0;
-    text-decoration: none;
-}
-
-.nav {
+    font-style: normal;
     display: flex;
     justify-content: space-between;
     padding: 10px 200px 10px;
+}
+.page-header a {
+    margin-top: 10px;
 }
 
 .sub-nav  {
@@ -42,9 +43,16 @@ a {
     display: flex;
     margin-top: 140px;
 }
-.main-content p {
+.main-content h1 {
     margin-top: 60px;
     margin-left: -300px;
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: normal;
+}
+.main-content p {
+    margin-top: 150px;
+    margin-left: -320px;
     font-size: 72px;
     line-height: 1.2;
 }
@@ -56,29 +64,33 @@ a {
 /*---  メインエリア部分 ---*/
 
 /*---　About ---*/
-.about {
+.title {
     position: relative;
-    margin-top:70px ;
-    margin-left:25% ;
 }
 
-.about h4 {
+.title img {
     position: absolute;
-    top: 7%;
-    left: 2%;
+    top: 70px;
+    left: 450px;
+}
+.title-t {
+    position: absolute;
+    top: 70px;
+    left: 460px;
     font-size: 53px;
     font-weight: normal;
 }
-.about p {
+.title p {
     position: absolute;
-    top: 25%;
-    left: 15%;
+    top: 100px;
+    left: 650px;
     font-size: 16px;
     font-weight: normal;
     font-family: "noto sans jp thin";
 }
 
 .about-content {
+    margin-top: 200px;
     display: flex;
     justify-content:center;
     font-size:16px;
@@ -97,18 +109,22 @@ a {
     margin-top: 40px;
 
 }
+
 .button {
     display: block;
     border-radius: 20px ;
     background:#F4EAE0 ;
-    height:40px ;
     width:142px ;
-    text-align: center;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 14px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
     font-family: "caveat";
+    text-align: center;
     text-decoration: none;
-    padding: 16px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+
 }
 .button:hover {
     background: #F4DFC8;
@@ -117,29 +133,10 @@ a {
 
 
 /*--- works ---*/
-.works {
-    position: relative;
-    margin-top:70px ;
-    margin-left:25% ;
-    list-style: none;
-}
-.works h4 {
-    position: absolute;
-    top: 7%;
-    left: 2%;
-    font-size: 53px;
-    font-weight: normal;
-}
-.works p {
-    position: absolute;
-    top: 25%;
-    left: 15%;
-    font-size: 16px;
-    font-weight: normal;
-    font-family: "noto sans jp thin";
-}
+
 
 .works-content {
+    margin-top: 200px;
     display: grid;
     grid-template-columns:repeat(2,520px) ;
     justify-content: center;
@@ -184,28 +181,9 @@ a {
 /*--- works ---*/
 
 /*--- ここからstrength ---*/
-.strength {
-    position: relative;
-    margin-top:70px ;
-    margin-left:25% ;
-}
-.strength h4 {
-    position: absolute;
-    top: 7%;
-    left: 1%;
-    font-size: 53px;
-    font-weight: normal;
-}
-.strength p {
-    position: absolute;
-    top: 25%;
-    left: 15%;
-    font-size: 16px;
-    font-weight: normal;
-    font-family: "noto sans jp thin";
-}
 
 .strength-content {
+    margin-top: 200px;
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -231,27 +209,9 @@ a {
 /*--- strength ---*/
 
 /*--- ここからcontact ---*/
-.contact {
-    position: relative;
-    margin-top:70px ;
-    margin-left:25% ;
-}
-.contact h4 {
-    position: absolute;
-    top: 7%;
-    left: 1%;
-    font-size: 53px;
-    font-weight: normal;
-}
-.contact p {
-    position: absolute;
-    top: 25%;
-    left: 15%;
-    font-size: 16px;
-    font-weight: normal;
-    font-family: "noto sans jp thin";
-}
+
 h6 {
+    margin-top: 200px;
     text-align: center;
     font-size: 16px;
     font-weight: normal;
@@ -291,31 +251,6 @@ textarea {
     height: 100px;
 }
 
-input[type="submit"] {
-    border: none;
-    margin-bottom: 70px;
-}
-
-.button {
-    display: block;
-    border-radius: 20px ;
-    background:#F4EAE0 ;
-    height:40px ;
-    width:142px ;
-    padding: 16px 30px;
-    font-size: 14px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-    font-family: "caveat";
-    text-align: center;
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 70px;
-}
-.button:hover {
-    background: #F4DFC8;
-}
 
 .footer {
     max-width: auto;
@@ -325,34 +260,16 @@ input[type="submit"] {
     line-height: 1.2;
     background-color: #FAF6F0;
     padding: 20px;
+    margin-bottom: 0;
     list-style: none;
 }
 
 
 /*--- ここからキャリアpage ---*/
-.career {
-    position: relative;
-    margin-top:70px ;
-    margin-left:30% ;
-}
-.career h4 {
-    position: absolute;
-    top: 1%;
-    left: 2%;
-    font-size: 53px;
-    font-weight: normal;
-}
-.career p {
-    position: absolute;
-    top: 25%;
-    left: 15%;
-    font-size: 16px;
-    font-weight: normal;
-    font-family: "noto sans jp thin";
-}
+
 .career-content {
     margin-bottom: 70px;
-    margin-top: 40px;
+    margin-top: 200px;
     display: flex;
     justify-content: center;
     font-family: "noto sans jp thin";
@@ -363,6 +280,10 @@ input[type="submit"] {
 li {
     padding-top:10px ;
     list-style: none;
+}
+
+#career-btn {
+    margin-left: 500px;
 }
 
 /*---ここからモバイル版 ---*/
